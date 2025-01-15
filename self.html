@@ -2,32 +2,107 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" conten="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>자기소개 페이지</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+
+            header {
+                background-color: #4CAF50;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            main {
+                padding: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+                background: white;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+
+            h1, h2 {
+                color: #4CAF50;
+            }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+                color: #4CAF50;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px 0;
+                background-color: #4CAF50;
+                color: white;
+                margin-top: 20px;
+            }
+        </style>
     </head>
     <body>
-        <h1>안녕하세요, 저는 윤혜민입니다.</h1>
-        <p>저는 정치외교학 전공이자 IT정보공학을 복수전공 중인 대학생입니다.</p>
+        <header>
+            <h1>안녕하세요, 저는 윤혜민입니다.</h1>
+        </header>
+        <main>
+            <p>저는 정치외교학 전공이자 IT정보공학을 복수전공 중인 대학생입니다.</p>
 
-        <h2>저의 기술 스택</h2>
-        <ul>
-            <li>파이썬</li>
-            <li>C++</li>
-        </ul>
+            <h2>저의 기술 스택</h2>
+            <ul>
+                <li>파이썬</li>
+                <li>C++</li>
+            </ul>
 
-        <h2>학력</h2>
-        <table>
-            <thread>
-                <tr>
-                    <th>전북대학교</th>
-                    <th>정치외교학,IT정보공학</th>
-                    <th>2025년 8월 졸업예정</th>
-                </tr>
-                <tr>
-                    <th>충북여자고등학교 졸업</th>
-                    <th>2021년 졸업</th>
-                </tr>
-            </thread>
-        </table>
+            <h2>학력</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>학교</th>
+                        <th>전공</th>
+                        <th>기간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>전북대학교</td>
+                        <td>정치외교학, IT정보공학</td>
+                        <td>2025년 8월 졸업예정</td>
+                    </tr>
+                    <tr>
+                        <td>충북여자고등학교</td>
+                        <td>고등학교</td>
+                        <td>2021년 졸업</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            &copy; 2025 윤혜민. All Rights Reserved.
+        </footer>
     </body>
 </html>
