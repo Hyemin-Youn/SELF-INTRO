@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About 윤혜민</title>
     <style>
+        /* 기본 스타일 */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -21,6 +22,41 @@
             text-align: center;
         }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        .banner {
+            position: relative;
+            background: url('assets/images/banner.jpg') no-repeat center center/cover;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
         main {
             padding: 20px;
             max-width: 800px;
@@ -34,15 +70,31 @@
             color: #4CAF50;
         }
 
+        .profile-introduction {
+            text-align: center;
+        }
+
+        .profile-introduction img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+
         .profile-details {
             display: flex;
+            flex-wrap: wrap; /* 반응형 지원 */
             justify-content: space-between;
             margin-top: 20px;
         }
 
         .profile-details div {
             flex: 1;
-            margin: 0 10px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f5f5f5;
         }
 
         ul {
@@ -57,15 +109,44 @@
             color: white;
             margin-top: 20px;
         }
+
+        /* 반응형 디자인 */
+        @media (max-width: 600px) {
+            .profile-details {
+                flex-direction: column;
+            }
+
+            .profile-details div {
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- 헤더 섹션 -->
     <header>
         <h1>About 윤혜민</h1>
     </header>
+
+    <!-- 네비게이션 바 -->
+    <nav>
+        <a href="#introduction">소개</a>
+        <a href="#education">학력</a>
+        <a href="#goals">목표</a>
+        <a href="#contact">연락처</a>
+    </nav>
+
+    <!-- 배너 섹션 -->
+    <section class="banner">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <!-- 메인 콘텐츠 -->
     <main>
-        <section>
+        <!-- 자기소개 섹션 -->
+        <section id="introduction" class="profile-introduction">
             <h2>안녕하세요!</h2>
+            <img src="assets/images/profile.jpg" alt="프로필 사진">
             <p>
                 저는 전북대학교에서 정치외교학과와 IT정보공학과를 복수전공하고 있는 윤혜민입니다.
                 학업과 함께 다양한 프로젝트를 통해 개발에 관심을 가지고 성장해가고 있습니다.
@@ -74,12 +155,14 @@
                 2024년 1학기 웹서비스설계 수업을 수강하고 프론트엔드 개발에 관심이 생겨 개발자를 꿈꾸게 되었습니다.
             </p>
             <p>
-                현재는 프로트엔드를 좀 더 자세하게 배우고자 프론트엔드 직무부트캠프에 참여하게 되었습니다.
+                현재는 프론트엔드를 좀 더 자세히 배우고자 프론트엔드 직무부트캠프에 참여하게 되었습니다.
+            </p>
         </section>
 
-        <section class="profile-details">
+        <!-- 프로필 상세 섹션 -->
+        <section id="education" class="profile-details">
             <div class="profile-biography">
-                <h3>소개</h3>
+                <h3>학력</h3>
                 <p>대학생</p>
                 <p>전북대학교 정치외교학과, IT정보공학과(복수전공)</p>
             </div>
@@ -93,6 +176,8 @@
             </div>
         </section>
     </main>
+
+    <!-- 푸터 -->
     <footer>
         &copy; 2025 윤혜민. All Rights Reserved.
     </footer>
