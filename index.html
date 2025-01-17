@@ -1,108 +1,101 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>자기소개 페이지</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                margin: 0;
-                padding: 0;
-                background-color: #f9f9f9;
-                color: #333;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About 윤혜민</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-            header {
-                background-color: #4CAF50;
-                color: white;
-                padding: 20px 0;
-                text-align: center;
-            }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-            main {
-                padding: 20px;
-                max-width: 800px;
-                margin: 0 auto;
-                background: white;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                border-radius: 8px;
-            }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
 
-            h1, h2 {
-                color: #4CAF50;
-            }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
 
-            ul {
-                list-style-type: disc;
-                padding-left: 20px;
-            }
+        .profile-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
 
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 20px;
-            }
+        .profile-details div {
+            flex: 1;
+            margin: 0 10px;
+        }
 
-            th, td {
-                border: 1px solid #ddd;
-                padding: 8px;
-                text-align: left;
-            }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
 
-            th {
-                background-color: #f2f2f2;
-                color: #4CAF50;
-            }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About 윤혜민</h1>
+    </header>
+    <main>
+        <section>
+            <h2>안녕하세요!</h2>
+            <p>
+                저는 전북대학교에서 정치외교학과와 IT정보공학과를 복수전공하고 있는 윤혜민입니다.
+                학업과 함께 다양한 프로젝트를 통해 개발에 관심을 가지고 성장해가고 있습니다.
+            </p>
+            <p>
+                2024년 1학기 데이터베이스 수업을 수강한 후 웹서비스설계 수업을 수강하고 프론트엔드 개발에 관심이 생겨 개발자를 꿈꾸게 되었습니다.
+            </p>
+            <p>
+                현재는 웹서비스설계, 데이터통신, C++프로그래밍, 이산수학, 컴퓨터공학총론을 수강 중입니다.
+            </p>
+        </section>
 
-            footer {
-                text-align: center;
-                padding: 10px 0;
-                background-color: #4CAF50;
-                color: white;
-                margin-top: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>안녕하세요, 저는 윤혜민입니다.</h1>
-        </header>
-        <main>
-            <p>저는 정치외교학 전공이자 IT정보공학을 복수전공 중인 대학생입니다.</p>
-
-            <h2>저의 기술 스택</h2>
-            <ul>
-                <li>파이썬</li>
-                <li>C++</li>
-            </ul>
-
-            <h2>학력</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>학교</th>
-                        <th>전공</th>
-                        <th>기간</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>전북대학교</td>
-                        <td>정치외교학, IT정보공학</td>
-                        <td>2025년 8월 졸업예정</td>
-                    </tr>
-                    <tr>
-                        <td>충북여자고등학교</td>
-                        <td>고등학교</td>
-                        <td>2021년 졸업</td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
-        <footer>
-            &copy; 2025 윤혜민. All Rights Reserved.
-        </footer>
-    </body>
+        <section class="profile-details">
+            <div class="profile-biography">
+                <h3>소개</h3>
+                <p>대학생</p>
+                <p>전북대학교 정치외교학과, IT정보공학과(복수전공)</p>
+            </div>
+            <div class="profile-interests">
+                <h3>관심 분야</h3>
+                <ul>
+                    <li>인공지능 (AI)</li>
+                    <li>클라우드</li>
+                    <li>개발 (Development & Deploy)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 윤혜민. All Rights Reserved.
+    </footer>
+</body>
 </html>
